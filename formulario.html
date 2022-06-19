@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Avaliação - Formulário</title>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<!-- Bootstrap 5 JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+	<!-- Font Awesome 4-->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
+	<style>
+		.centralizar{
+		text-align : center;	
+		}
+		
+		img {
+		  margin: auto;
+		  display: block;
+		}
+		
+		p {
+			font-weight: bold;
+			text-align: justify;
+			font-size: 18px;
+		}
+		
+		h1 {
+			font-weight: bold;
+		
+		}
+		
+		h6 {
+			font-weight: bold;
+		
+		}
+	</style>
+
+
+  </head>
+  <body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="./index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./partituras.html">Partituras</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./cursos.html">Cursos<span class="sr-only">(atual)</span></a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="./formulario.html">Cadastre-se<span class="sr-only"></span></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	
+	<main>
+		<h2 class = "centralizar" style="color: #1e8f21">NOTÍCIAS</h2>
+		<br>
+		<p class = "centralizar">O site Música para Todos envia notícias sobre de violão como festivais e concursos e ainda notícias em geral a respeito de música e violão.</p>
+		<br>
+		<img class= "img-fluid" src="./img/HomemViolao.png" alt= "Homem tocando violão">
+		<br>
+		<br><h2 class = "centralizar" style="color: #1e8f21">RECEBA NOSSA NEWSLETTER</h2>
+		<br><p class = "centralizar">Semanalmente, atualizamos nossos usuários cadastrados com as novidades e tendências do mundo da música.</p>
+		<br>
+				
+        <div class="row">
+			<article class="col-12"><h2 class = "centralizar" style="color: #1e8f21" id="formulario">Cadastre-se</h2><br>
+
+            <div class="container">
+                <form class="needs-validation" onsubmit="enviar()" novalidate>
+                    <div class="row"> 
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <label for="nome" >Nome*</label><br>
+                                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                                        <div class="invalid-feedback">
+                                            Campo nome obrigatório.
+                                        </div>
+                                        <div class="valid-feedback">      
+                                        </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm">        
+                            <div class="form-group">
+                                <label for="e-mail">E-mail*</label>
+                                    <input type="email" class="form-control" id="e-mail" placeholder="Digite seu e-mail" required>
+                                        <div class="invalid-feedback">
+                                            Campo e-mail obrigatório.
+                                        </div>
+                                        <div class="valid-feedback">      
+                                        </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem*</label>
+                                    <input type="text" class="form-control" id="mensagem" placeholder="Digite uma mensagem" required>
+                                        <div class="invalid-feedback">
+                                            Campo mensagem obrigatório.
+                                        </div>
+                                        <div class="valid-feedback">      
+                                        </div>
+                            </div>
+                            <br><button type="submit" class="btn btn-primary mb-2 float-left" id="enviar">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </article>
+        </div>
+	</main>
+	
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5">
+
+  <footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+<div class="container">
+  <div class="row">
+    <div class="col social-buttons">
+    <h6>Nossas Redes Sociais</h6>
+    <a class="btn btn-social text-white btn-facebook" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>
+    <a class="btn btn-social text-white btn-instagram" href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+    <a class="btn btn-social text-white btn-twitter" href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
+    </div>
+  </div>
+</div>  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+	© 2022 Copyright:
+    <a class="text-white" href="./Index.html">Música Para Todos</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+  
+</div>
+<!-- End of .container -->
+	
+	
+	<script src="./js/script.js"></script>
+	
+
+	<!-- JavaScript (Opcional) -->
+	<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
